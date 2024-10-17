@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Merriweather:wght@300&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  background-color:#fdedec ;
+  font-weight: 300;
+  color: #666;
+  padding-bottom: 50px
+}
+
+h1 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #000
+}
+
+main {
+  width: 83.33%;
+  /*10 columnas de 12*/
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+  }
+
+header {
+  text-align: center;
+  padding: 50px;
+  background-color: #fadbd8 ;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+header a {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+
+header a:hover {
+  background-color: #ff5c5c;
+}
+
+section p {width: 50%;
+  text-align:start;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-top: 20px; 
+  margin-bottom: 20px
+}
+section h2 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: #000
+}
+
+#image,#experiencia,#atardecer {
+  display: flex;
+  justify-content: center;
+}
+
+#image img {
+  max-width: 100%;
+  height: auto;
+  width: 45%;
+  border: 5px solid #000;
+  transition: filter 0.3s ease;
+  margin: 0 10px
+}
+
+#image img:hover {
+  filter: brightness(80%);
+}
+
+
+#atardecer img {
+  max-width: 100%;
+  height: auto;
+  width: 70%;
+}
+
+#experiencia img {
+  width: 30%;
+  border: 3px solid #333;
+  transition: filter 0.3s ease;
+  margin: 0 10px;
+}
+#experiencia img:hover {
+  filter: brightness(80%);
+}
+@media (max-width: 768px) {
+  #image img, #atardecer img, #experiencia img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+    height: auto; /* Mantén la proporción de la imagen */
+    margin-bottom: 20px; /* Añade espacio entre las imágenes */
+  }
+
+  #image, #experiencia {
+    flex-direction: column; /* Asegura que las imágenes se apilen verticalmente */
+  }
+}
+
